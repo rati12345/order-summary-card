@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Pale-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+img {
+  max-width: 100%;
+}
+.card {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 370px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.hero {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+h1,
+p {
+  text-align: center;
+}
+
+article,
+.payment {
+  width: 90%;
+  margin: 1rem auto;
+}
+h1 {
+  margin: 1rem;
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+p {
+  color: var(--Desaturated-blue);
+  line-height: 27px;
+}
+.payment {
+  border-radius: 15px;
+  background-color: hsla(225, 100%, 94%, 0.336);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 1rem;
+}
+a {
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+h3 {
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+h5 {
+  color: var(--Desaturated-blue);
+  font-size: 13px;
+}
+button {
+  outline: none;
+  border: none;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.primary {
+  background-color: var(--Bright-blue);
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  box-shadow: rgb(0 0 0 / 35%) 0px 7px 15px;
+  transition: 0.2s;
+}
+
+.cancel {
+  background-color: transparent;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+}
+
+button:hover {
+  cursor: pointer;
+}
+.primary:hover {
+  background-color: rgb(121, 70, 179);
+}
